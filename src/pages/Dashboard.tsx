@@ -17,7 +17,7 @@ interface Transaction {
 
 const Dashboard = () => {
   const { toast } = useToast();
-  const [balance] = useState(2857.56);
+  const [balance] = useState(2,857.56);
   
   const recentTransactions: Transaction[] = [
     { id: "1", type: "received", contact: "sarah@email.com", amount: 50.00, date: "2025-10-02", status: "completed", memo: "Lunch split" },
@@ -28,7 +28,7 @@ const Dashboard = () => {
   ];
 
   const handleCopyLink = () => {
-    const link = `${window.location.origin}/pay/AwesomeUser`;
+    const link = `${window.location.origin}/pay/David Mwaura`;
     navigator.clipboard.writeText(link);
     toast({
       title: "Link Copied!",
@@ -55,7 +55,7 @@ const Dashboard = () => {
               </h2>
               <div className="flex items-center gap-2 text-success">
                 <TrendingUp className="h-4 w-4" />
-                <span className="text-sm font-medium">+12.5% this month</span>
+                <span className="text-sm font-medium">+13.5% this month</span>
               </div>
             </div>
             <div className="flex flex-col gap-3">
