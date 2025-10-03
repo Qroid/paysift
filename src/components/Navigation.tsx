@@ -20,8 +20,9 @@ const Navigation = () => {
   return (
     <nav className="bg-card border-b border-border shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-18">
           <Link to="/" className="flex items-center gap-2">
+            <img src={logo} alt="PaySift" className="h-8" />
             <img src={logo} alt="PaySift" className="h-15" />
           </Link>
 
