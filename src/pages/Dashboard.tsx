@@ -17,7 +17,7 @@ interface Transaction {
 
 const Dashboard = () => {
   const { toast } = useToast();
-  const [balance] = useState(2,857.56);
+  const [balance] = useState(2857.56);
   
   const recentTransactions: Transaction[] = [
     { id: "1", type: "received", contact: "sarah@email.com", amount: 50.00, date: "2025-10-02", status: "completed", memo: "Lunch split" },
