@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Home, Send, Download, History, Settings, DollarSign } from "lucide-react";
+import { Home, Send, Download, History, Settings } from "lucide-react";
+import logo from "@/assets/paysift-logo.png";
 
 const Navigation = () => {
   const location = useLocation();
@@ -21,10 +22,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2">
-            <div className="p-2 rounded-full bg-gradient-primary">
-              <DollarSign className="h-6 w-6 text-primary-foreground" />
-            </div>
-            <span className="text-xl font-bold text-foreground">PaySift</span>
+            <img src={logo} alt="PaySift" className="h-8" />
           </Link>
 
           <div className="hidden md:flex items-center gap-2">
