@@ -24,7 +24,7 @@ const Navigation = () => {
             <div className="p-2 rounded-full bg-gradient-primary">
               <DollarSign className="h-6 w-6 text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold text-foreground">PayFlow</span>
+            <span className="text-xl font-bold text-foreground">PaySift</span>
           </Link>
 
           <div className="hidden md:flex items-center gap-2">
